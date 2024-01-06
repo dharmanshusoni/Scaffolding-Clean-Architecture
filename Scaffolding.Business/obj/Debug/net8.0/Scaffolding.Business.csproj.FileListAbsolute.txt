@@ -1,0 +1,15 @@
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Business\bin\Debug\net8.0\Scaffolding.Business.deps.json
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Business\bin\Debug\net8.0\Scaffolding.Business.dll
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Business\bin\Debug\net8.0\Scaffolding.Business.pdb
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Business\obj\Debug\net8.0\Scaffolding.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Business\obj\Debug\net8.0\Scaffolding.Business.AssemblyInfoInputs.cache
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Business\obj\Debug\net8.0\Scaffolding.Business.AssemblyInfo.cs
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Business\obj\Debug\net8.0\Scaffolding.Business.csproj.CoreCompileInputs.cache
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Business\obj\Debug\net8.0\Scaffolding.Business.dll
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Business\obj\Debug\net8.0\refint\Scaffolding.Business.dll
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Business\obj\Debug\net8.0\Scaffolding.Business.pdb
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Business\obj\Debug\net8.0\ref\Scaffolding.Business.dll
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Business\bin\Debug\net8.0\Scaffolding.Core.dll
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Business\bin\Debug\net8.0\Scaffolding.Core.pdb
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Business\obj\Debug\net8.0\Scaffolding.Business.csproj.AssemblyReference.cache
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Business\obj\Debug\net8.0\Scaffolding.Business.csproj.CopyComplete

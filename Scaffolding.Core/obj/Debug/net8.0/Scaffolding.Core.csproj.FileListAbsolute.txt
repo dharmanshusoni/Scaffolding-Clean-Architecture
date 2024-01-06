@@ -1,0 +1,12 @@
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Core\bin\Debug\net8.0\Scaffolding.Core.deps.json
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Core\bin\Debug\net8.0\Scaffolding.Core.dll
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Core\bin\Debug\net8.0\Scaffolding.Core.pdb
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Core\obj\Debug\net8.0\Scaffolding.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Core\obj\Debug\net8.0\Scaffolding.Core.AssemblyInfoInputs.cache
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Core\obj\Debug\net8.0\Scaffolding.Core.AssemblyInfo.cs
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Core\obj\Debug\net8.0\Scaffolding.Core.csproj.CoreCompileInputs.cache
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Core\obj\Debug\net8.0\Scaffolding.Core.dll
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Core\obj\Debug\net8.0\refint\Scaffolding.Core.dll
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Core\obj\Debug\net8.0\Scaffolding.Core.pdb
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Core\obj\Debug\net8.0\ref\Scaffolding.Core.dll
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Core\obj\Debug\net8.0\Scaffolding.Core.csproj.AssemblyReference.cache

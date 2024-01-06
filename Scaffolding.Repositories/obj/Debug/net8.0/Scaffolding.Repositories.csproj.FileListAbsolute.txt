@@ -1,0 +1,17 @@
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\obj\Debug\net8.0\Scaffolding.Repositories.csproj.AssemblyReference.cache
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\obj\Debug\net8.0\Scaffolding.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\obj\Debug\net8.0\Scaffolding.Repositories.AssemblyInfoInputs.cache
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\obj\Debug\net8.0\Scaffolding.Repositories.AssemblyInfo.cs
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\obj\Debug\net8.0\Scaffolding.Repositories.csproj.CoreCompileInputs.cache
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\bin\Debug\net8.0\Scaffolding.Repositories.deps.json
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\bin\Debug\net8.0\Scaffolding.Repositories.runtimeconfig.json
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\bin\Debug\net8.0\Scaffolding.Repositories.dll
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\bin\Debug\net8.0\Scaffolding.Repositories.pdb
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\bin\Debug\net8.0\Scaffolding.Core.dll
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\bin\Debug\net8.0\Scaffolding.Core.pdb
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\obj\Debug\net8.0\Scaffolding.Repositories.csproj.CopyComplete
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\obj\Debug\net8.0\Scaffolding.Repositories.dll
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\obj\Debug\net8.0\refint\Scaffolding.Repositories.dll
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\obj\Debug\net8.0\Scaffolding.Repositories.pdb
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\obj\Debug\net8.0\Scaffolding.Repositories.genruntimeconfig.cache
+C:\Git\ScaffoldingCleanArchitecture\Scaffolding.Repositories\obj\Debug\net8.0\ref\Scaffolding.Repositories.dll
