@@ -12,7 +12,7 @@ using System.Text;
 
 namespace Scaffolding.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/account")]
     [ApiController]
     public class AccountController : ControllerBase
     {
@@ -60,7 +60,7 @@ namespace Scaffolding.API.Controllers
 
         [HttpPost]
         [Route("Login")]
-        public async Task<IActionResult> Login(LoginModel model)
+        public async Task<IActionResult> Login(LoginModel model) 
         {
             var user = await this.userManager.FindByNameAsync(model.Email);
             if (user != null)

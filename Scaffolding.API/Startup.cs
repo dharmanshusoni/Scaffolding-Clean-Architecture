@@ -10,24 +10,30 @@ using Scaffolding.DependencyResolver;
 using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Http.Connections;
 using Scaffolding.API.Hubs;
+using Scaffolding.Core.AppSetting;
 
 namespace Scaffolding.API
 {
     public class Startup
     {
-        public IContainer ApplicationContainer { get; private set; }
-        public ILifetimeScope AutofacContainer { get; private set; }
-        public IConfiguration Configuration { get; }
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
 
+        public IConfiguration Configuration { get; }
+        public IContainer ApplicationContainer { get; private set; }
+
+        public ILifetimeScope AutofacContainer { get; private set; }
+
+        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("AppConnection")));
+
             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>(); ;
+
             services.Configure<IdentityOptions>(options =>
             {
                 options.Password.RequireDigit = false;
@@ -35,9 +41,16 @@ namespace Scaffolding.API
                 options.Password.RequireLowercase = false;
                 options.Password.RequireUppercase = false;
                 options.Password.RequiredLength = 4;
-            });
+            }
+            );
+
             services.AddCors();
+
+
+            //Jwt Authentication
+
             var key = Encoding.UTF8.GetBytes(Configuration["ApplicationSettings:JWT_Secret"].ToString());
+
             services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -56,9 +69,13 @@ namespace Scaffolding.API
                     ClockSkew = TimeSpan.Zero
                 };
             });
+
             services.AddSignalR();
+
             services.AddControllers();
+
             services.AddOptions();
+
             //services.AddSwaggerGen();
         }
         public void ConfigureContainer(ContainerBuilder builder)
@@ -70,35 +87,38 @@ namespace Scaffolding.API
             builder.RegisterModule(new BusinessAutofacModule1());
 
         }
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            //app.UseSwagger();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
-            //app.UseStaticFiles();
 
-            //app.UseStaticFiles(new StaticFileOptions
-            //{
-            //    FileProvider = new PhysicalFileProvider(
-            //                Path.Combine(Directory.GetCurrentDirectory(), "Resources")),
-            //    RequestPath = "/Resources"
-            //});
-            //app.UseCors("EnableCORS");
+            }
+
 
             app.UseHttpsRedirection();
+
+
+
+
             app.UseRouting();
-            //app.UseCors("AllowAll");
+
             app.UseCors(builder =>
              builder.WithOrigins(Configuration["ApplicationSettings:Client_URL"].ToString(), "http://localhost:4200")
              .AllowAnyHeader()
              .AllowAnyMethod()
              .AllowCredentials()
+
              );
+
+            // can use the convenience extension method GetAutofacRoot.
             this.AutofacContainer = app.ApplicationServices.GetAutofacRoot();
-            app.UseAuthentication();
+
             app.UseAuthorization();
-            //app.UseMiddleware<ExceptionHandlingMiddleware>();
+
+
 
             app.UseEndpoints(endpoints =>
             {
@@ -110,6 +130,10 @@ namespace Scaffolding.API
                         HttpTransportType.LongPolling;
                 });
             });
+
+            //app.UseSwaggerUI(c => { c.SwaggerEndpoint("v1/swagger.json", "Simple Chat API V1"); });
+
+
         }
     }
 }
